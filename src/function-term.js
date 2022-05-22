@@ -1,4 +1,9 @@
 class FunctionTerm {
+  /**
+   *
+   * @param variables {VariableTerm[]}
+   * @param coefficient {number}
+   */
   constructor(variables, coefficient) {
     this.coefficient = coefficient;
     this.variables = variables;
