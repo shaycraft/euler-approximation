@@ -10,12 +10,12 @@ describe("FunctionTerm", () => {
     expect(functionTerm.print()).toEqual("42*x^2*t^3");
   });
 
-  test("should print the correct result for 42*t^3", () => {
+  test("should print the correct result for 42*t^7", () => {
     const functionTerm = new FunctionTerm(
-      [new VariableTerm("x", 0), new VariableTerm("t", 2)],
+      [new VariableTerm("x", 0), new VariableTerm("t", 7)],
       42
     );
-    expect(functionTerm.print()).toEqual("42*t^3");
+    expect(functionTerm.print()).toEqual("42*t^7");
   });
 
   test("should print the correct result for 42*x*t", () => {

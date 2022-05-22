@@ -20,7 +20,7 @@ class FunctionTerm {
     }
 
     this.variables.forEach((variable) => {
-      if (sb.length) {
+      if (sb.length && variable.exponent) {
         sb.push("*");
       }
 
